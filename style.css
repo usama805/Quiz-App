@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Squada+One&family=Trocchi&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background-color:#1f2847;
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0,0, 10px  rgba(0,0,0,0.1); 
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+label{
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+select{
+    width: 350px;
+    padding: 10px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+.btn-start{
+    width: 100%;
+    height: 65px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn-start:hover{
+background-color:aqua;
+}
+
+
+.btn-start:disabled{
+    cursor: not-allowed;
+    background-color:rgb(20, 88, 88);
+    }
+
+    .hide{
+        /* display: none; */
+    }
+
+     .timer{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .timer, .progress{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 30px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        border: 3px solid #3f4868;
+    }
+
+.timer .progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(to right, #ea517c,#b478f1);
+    transition: 1s linear;
+}
+
+
+
+
+.question-wrapper .number{
+color: whitesmoke;
+font-size: 25px;
+font-weight: 500;
+margin-bottom: 15px;
+
+}
+
+.question-wrapper .number .current,
+.question-wrapper .number .total {
+    color: #d8dae1;
+    font-size: 20px;
+}
+
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add space between progress bar and question section */
+}
+
+ Progress bar and progress-text styling
+ .progress {
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #333;
+} 
+
+/* Question-wrapper should have space between number and question text */
+.question-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between question number and actual question */
+}
+
+/* Styling for the question number */
+.number {
+    font-size: 20px;
+    color: #d8dae1;
+}
+
+/* Styling for current and total question numbers */
+.current,
+.total {
+    color: #d8dae1;
+    font-size: 15px;
+}
+
+
